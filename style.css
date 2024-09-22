@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    margin: 0;
+}
+
+.calculator {
+    border: 1px solid #760094;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(236, 45, 220, 0.829);
+    background: #222;
+    padding: 20px;
+    width: 320px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    background: #584c58;
+    color: #dfdfdf;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    background: #333;
+    color: #f1ebf1;
+    font-size: 1.0em;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(241, 54, 216, 0.5);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.operator {
+    background: #7a3a6a;
+}
+
+.operator:hover {
+    background-color: #da55df;
+}
+
+.equal {
+    background-color: #6c387c;
+    grid-column: span 4; /* Span across all columns */
+}
+
+.equal:hover {
+    background-color: #1d0104;
+}
+
+.btn-zero {
+    grid-column: span 2; /* Span two columns for the zero button */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #ffabff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
